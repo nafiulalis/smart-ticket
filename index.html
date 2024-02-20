@@ -121,7 +121,7 @@
             </div>
         </section>
         <!-- Ticket Section -->
-        <section class="bg-[#F7F8F8] mt-8">
+        <section class="bg-[#F7F8F8] rounded-3xl mt-8">
 
             <!-- Ticket Details and schedule container -->
 
@@ -130,38 +130,66 @@
                 <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div class="flex ">
+            <div class="flex bg-[white] w-[1170px] mx-auto rounded-xl py-8 ">
                 <!-- left side of ticket -->
-                <div class="flex w-[70%] justify-between border-r-2 border-dashed border-[#1DD100] px-5">
-                    <div class=" flex justify-center items-center gap-7 pl-6">
-                        <img src="/images/bus-logo.png" alt="">
+                <div class="w-[70%]  border-r-2 border-dashed border-[#1DD100]">
+                    <div class="flex justify-between items-center px-5">
+                        <div class=" flex justify-center items-center gap-7 pl-6">
+                            <img src="/images/bus-logo.png" alt="">
+                            <div>
+                                <h2>Greenline Paribahan</h2>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
                         <div>
-                            <h2>Greenline Paribahan</h2>
-                            <p>Coach-009-WEB ! AC_Business</p>
+                            <div class="flex justify-center items-center gap-2 bg-lime-200 p-5 rounded-xl">
+                                <img src="/images/seat-green.png" alt="">
+                                <h4 class="">40 Seats left</h4>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="flex justify-center items-center gap-2 bg-lime-200 p-5 rounded-xl">
-                            <img src="/images/seat-green.png" alt="">
-                            <h4 class="">40 Seats left</h4>
-                        </div>
-                    </div>
-
-                    <!-- <div class="bg-[#F7F8F8]">
-                        <div class="flex justify-between">
+                    <div class="bg-[#F7F8F8] m-5 p-8 rounded-xl">
+                        <div class="flex pb-3 justify-between border-b-2 border-dashed border-gray-500 ">
                             <span>Route</span>
                             <span>Dhaka-Sylhet</span>
                         </div>
-                    </div> -->
+                        <div class="flex py-3 justify-between border-b-2 border-dashed border-gray-500 ">
+                            <span>Departure Time</span>
+                            <span>09:00 PM</span>
+                        </div>
+                        <div class="flex py-3 justify-between border-b-2 border-dashed border-gray-500 ">
+                            <span class="bg-[#0307120D] p-3 rounded-lg">Boarding Point - Laxmipur</span>
+                            <span class="bg-[#0307120D] p-3 rounded-lg">Dropping Point - Bogura</span>
+                            <span class="bg-[#0307120D] p-3 rounded-lg">Est. Time - 11 Hour</span>
+                            
+                        </div>
+                    </div>
                 </div>
                 <!-- right side of ticket -->
-                <div class="w-[30%] text-center">
+                <div class="flex flex-col justify-center items-center w-[30%] text-center space-y-3">
                     <img src="/images/fare.png" alt="">
-                    <h2>550 Taka</h2>
-                    <p>Per Seat</p>
+                    <h2 class="text-3xl font-bold">550 Taka</h2>
+                    <p class="text-2xl font-bold">Per Seat</p>
                 </div>
             </div>
         </section>
+        <!-- Seat Section -->
+        <section  class="bg-[#F7F8F8] rounded-3xl mt-8">
+            <div class="flex p-8">
+                <div class="w-[60%] border-r-2 border-dashed border-gray-500 px-7">
+                    <span>Select your seat</span>
+                    <div class="flex justify-between border-b-2 border-t-2 border-dashed border-gray-200 py-5">
+                        <span  class=""> Available </span>
+                        <img src="/images/seat-green-filled.png" alt="" srcset="">
+                        <span class="text-[#1dd100]">Selected</span>
+                    </div>
+                </div>
+                <div class="w-[40%]">
+                    <h3>Ticket Price</h3>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
 </body>
