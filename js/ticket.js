@@ -14,6 +14,11 @@ const discountCoupon = document.getElementById('discount-coupon');
 const discountPriceBox = document.getElementById('discount-price-box');
 const passengerDetails = document.getElementById('passenger-details-btn');
 const passengerPhoneNumber = document.getElementById('passenger-phone-number');
+const headerSection = document.getElementById('header-section');
+const offerSection = document.getElementById('offer-section');
+const ticketSection = document.getElementById('ticket-section');
+const seatSection = document.getElementById('seat-section');
+const finalSection = document.getElementById('final-output');
 
 let tickets = [];
 // Set seat background color
@@ -125,4 +130,19 @@ function passengerDetailsInfo() {
 function phoneNumber() {
 	passengerDetailsInfo();
 }
-// console.log(grandTotalPrice);
+
+function ticketConfirmed() {
+	headerSection.classList.add('hidden');
+	offerSection.classList.add('hidden');
+	ticketSection.classList.add('hidden');
+	seatSection.classList.add('hidden');
+	finalSection.classList.remove('hidden');
+}
+
+function continueToTicket() {
+	headerSection.classList.remove('hidden');
+	offerSection.classList.remove('hidden');
+	ticketSection.classList.remove('hidden');
+	seatSection.classList.remove('hidden');
+	finalSection.classList.add('hidden');
+}

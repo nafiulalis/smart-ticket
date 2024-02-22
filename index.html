@@ -25,7 +25,7 @@
 </head>
 
 <body class="font-raleway m-0 p-0">
-    <header class="container mx-auto">
+    <header id="header-section" class="container mx-auto">
         <!-- Navbar section -->
         <div class="navbar mx-auto bg-base-100">
             <div class="navbar-start">
@@ -80,11 +80,11 @@
     </header>
     <main class="container mx-auto">
         <!-- Offer Section -->
-        <section class="mt-7 ">
+        <section id="offer-section" class="mt-7 ">
             <div class="text-center mb-5">
                 <h2 class="text-4xl font-bold">Best offers for you</h2>
             </div>
-            <div class="coupon-container flex justify-center gap-12">
+            <div class="coupon-container flex flex-col lg:flex-row justify-center gap-12">
                 <!-- New 15 Coupon -->
                 <div class="flex justify-center">
                     <div class="bg-[#FFBF0F] text-center p-9 space-y-1 border-r-2 border-dashed rounded-l-2xl">
@@ -121,7 +121,7 @@
             </div>
         </section>
         <!-- Ticket Section -->
-        <section class="bg-[#F7F8F8] rounded-3xl mt-8 py-9">
+        <section id="ticket-section" class="bg-[#F7F8F8] rounded-3xl mt-8 py-9">
 
             <!-- Ticket Details and schedule container -->
 
@@ -130,9 +130,9 @@
                 <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div class="flex bg-[white] w-[1170px] mx-auto rounded-xl py-8">
+            <div class="flex flex-col lg:flex-row items-center bg-[white] w-auto lg:w-[1170px] mx-auto rounded-xl py-8">
                 <!-- left side of ticket -->
-                <div class="w-[70%]  border-r-2 border-dashed border-[#1DD100]">
+                <div class="lg:w-[70%] lg:border-r-2 border-dashed border-[#1DD100]">
                     <div class="flex justify-between items-center px-5">
                         <div class=" flex justify-center items-center gap-7 pl-6">
                             <img src="/images/bus-logo.png" alt="">
@@ -174,11 +174,12 @@
             </div>
         </section>
         <!-- Seat Section -->
-        <section class="bg-[#ffffff] rounded-3xl mt-8">
-            <div class="flex p-9">
-                <div class="w-[60%] border-r-2 border-dashed border-gray-500 px-7">
+        <section id="seat-section" class="bg-[#ffffff] rounded-3xl mt-8">
+            <div class="flex flex-col justify-center items-center lg:flex-row p-9">
+                <div class="w-auto lg:w-[60%] lg:border-r-2 border-dashed border-gray-500 px-7">
                     <span class="text-2xl font-bold">Select your seat</span>
-                    <div class="flex justify-between border-b-2 border-t-2 border-dashed border-gray-200 py-5 mt-4">
+                    <div
+                        class="flex flex-col lg:flex-row justify-between border-b-2 border-t-2 border-dashed border-gray-200 py-5 mt-4">
                         <div class="flex justify-center items-center space-x-3">
                             <img src="/images/seat-gray.png" alt="">
                             <span class=""> Available </span>
@@ -192,7 +193,7 @@
                         class="flex justify-center items-center ml-auto rounded-xl py-5 bg-gray-300 w-[100px] mt-5 mr-24 ">
                         <img src="/images/wheel.png" alt="">
                     </div>
-                    <div class="flex justify-around pt-5 [&_span]:cursor-pointer">
+                    <div class="flex flex-col lg:flex-row justify-around  pt-5 [&_span]:cursor-pointer">
                         <!-- Seat Left side -->
                         <div class="grid grid-cols-2 gap-5">
                             <span id="A1" class="seat text-xl font-medium bg-[#F7F8F8] p-9 rounded-xl">A1</span>
@@ -243,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[40%] px-5 text-center">
+                <div class="w-auto lg:w-[40%] px-5 text-center">
                     <h3 class="text-2xl font-bold px-8 pb-5 border-b-2 border-dashed mb-5 ">Ticket Price</h3>
                     <div class="bg-[#F7F8F8] rounded-xl">
                         <div class="flex flex-row justify-between p-5 border-b-2 border-dashed border-gray-200">
@@ -285,7 +286,8 @@
                         <input class="bg-white pl-2 py-3 pr-32 outline-none" type="email"
                             placeholder="Enter your e-mail ">
                     </div>
-                    <button id="passenger-details-btn" class="btn bg-[#1DD100] text-white px-48 hidden">Next</button>
+                    <button onclick="ticketConfirmed()" id="passenger-details-btn"
+                        class="btn bg-[#1DD100] text-white px-48 hidden">Next</button>
                     <div class="flex justify-around pt-5">
                         <p class="text-gray-500 border-b-2 border-gray-300">Terms and Conditions</p>
                         <p class="text-gray-500 border-b-2 border-gray-300">Cancellation Policy</p>
@@ -293,7 +295,7 @@
                 </div>
         </section>
         <!-- Final Section -->
-        <section class="hidden">
+        <section id="final-output" class="hidden">
             <div class="flex flex-col justify-center items-center space-y-3 mt-8">
                 <img class="w-[100px]" src="/images/success.png" alt="">
                 <h3 class="text-lg font-bold text-[#27AE60]">Success</h3>
@@ -304,7 +306,8 @@
                 <p>
                     Shortly you will find a confirmation in your email.
                 </p>
-                <button class="bg-[#27AE60] py-4 px-32 rounded-xl text-white font-bold">Continue</button>
+                <button onclick="continueToTicket()"
+                    class="btn bg-[#27AE60] py-4 px-32 rounded-xl text-white font-bold">Continue</button>
             </div>
         </section>
 
